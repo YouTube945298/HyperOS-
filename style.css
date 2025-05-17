@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: url('superwallpaper.gif') no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   font-size: 14px;
 }
@@ -23,16 +23,18 @@ body {
   text-align: center;
 }
 
-.app-icon {
-  font-size: 32px;
-  padding: 20px;
+.app-icon img, .dock-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
   background: rgba(255,255,255,0.1);
-  border-radius: 20px;
+  padding: 10px;
   backdrop-filter: blur(10px);
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
-.app-icon:active {
+.app-icon img:active, .dock-icon img:active {
   transform: scale(0.95);
 }
 
@@ -47,15 +49,6 @@ body {
   backdrop-filter: blur(5px);
 }
 
-.dock-icon {
-  font-size: 28px;
-}
-
-.setup-screen {
-  text-align: center;
-  margin-top: 100px;
-}
-
 button {
   font-size: 18px;
   padding: 10px 20px;
@@ -63,23 +56,21 @@ button {
   border-radius: 10px;
   background: #0af;
   color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.setup-screen, .app-page, .lockscreen {
+  text-align: center;
+  margin-top: 100px;
 }
 
 .lockscreen {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   background: black;
   color: white;
-  text-align: center;
-  flex-direction: column;
-}
-
-.lock-info .time {
-  font-size: 48px;
-}
-
-.lock-info .date {
-  margin-bottom: 20px;
 }
