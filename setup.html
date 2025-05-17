@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HyperOS Setup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Configurare HyperOS</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="setup-screen">
-    <h1>Bine ai venit în HyperOS</h1>
-    <p>Selectează fundalul și începe</p>
-    <button onclick="completeSetup()">Începe</button>
-  </div>
+<body class="setup-screen">
+  <h1>Bine ai venit în HyperOS</h1>
+  <p>Alege fundalul și începe experiența.</p>
+  <button onclick="completeSetup()">Continuă</button>
+
   <script>
     function completeSetup() {
       localStorage.setItem('setupDone', 'true');
