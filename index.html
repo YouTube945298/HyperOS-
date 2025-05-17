@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HyperOS Launcher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="status-bar">
     <span id="time">12:00</span>
-    <span id="status-icons">WiFi ● Battery</span>
+    <span id="status-icons">📶 Wi-Fi 🔋</span>
   </div>
 
   <div id="apps">
-    <div class="app-icon" onclick="openApp('settings')">⚙️</div>
-    <div class="app-icon" onclick="openApp('gallery')">🖼️</div>
-    <div class="app-icon" onclick="openApp('music')">🎵</div>
-    <div class="app-icon" onclick="openApp('camera')">📷</div>
+    <div class="app-icon" onclick="openApp('settings.html')">
+      <img src="icons/settings.png" alt="Setări" />
+    </div>
+    <div class="app-icon" onclick="openApp('gallery.html')">
+      <img src="icons/gallery.png" alt="Galerie" />
+    </div>
+    <div class="app-icon" onclick="openApp('music.html')">
+      <img src="icons/music.png" alt="Muzică" />
+    </div>
+    <div class="app-icon" onclick="openApp('camera.html')">
+      <img src="icons/camera.png" alt="Camera" />
+    </div>
   </div>
 
   <div id="dock">
-    <div class="dock-icon">📞</div>
-    <div class="dock-icon">✉️</div>
-    <div class="dock-icon">🌐</div>
+    <div class="dock-icon"><img src="icons/phone.png" alt="Telefon" /></div>
+    <div class="dock-icon"><img src="icons/messages.png" alt="Mesaje" /></div>
+    <div class="dock-icon"><img src="icons/browser.png" alt="Browser" /></div>
   </div>
 
   <script src="script.js"></script>
