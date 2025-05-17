@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HyperOS Launcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="status-bar">
+    <span id="time">12:00</span>
+    <span id="status-icons">WiFi ● Battery</span>
+  </div>
+
+  <div id="apps">
+    <div class="app-icon" onclick="openApp('settings')">⚙️</div>
+    <div class="app-icon" onclick="openApp('gallery')">🖼️</div>
+    <div class="app-icon" onclick="openApp('music')">🎵</div>
+    <div class="app-icon" onclick="openApp('camera')">📷</div>
+  </div>
+
+  <div id="dock">
+    <div class="dock-icon">📞</div>
+    <div class="dock-icon">✉️</div>
+    <div class="dock-icon">🌐</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
